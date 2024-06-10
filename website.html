@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+    <title>Navigation Menu Example</title>
+    <style>
+         .bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .bg-video video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        body{
+            
+        }
+            
+       
+   
+        .container {
+           
+                margin: 0 auto;
+                
+                padding: 20px;
+                box-sizing: border-box;
+             }
+            
+               /* Smartphones (portait and landscape )----------  */
+             
+            @media screen and (min-width: 767px)  {
+                .container {
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+                        }
+
+            /* tablets , iPads (portait and landscape )----------  */
+             
+         @media screen and (min-width: 768px) and (max-width: 1024px)  {
+               
+            .container {
+                    width: 750px;
+                    padding: 5px 10px;
+                }
+            }
+
+
+          /* Low resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1024px)  {
+            .container {
+                    width: 980px;
+                    padding: 5px 15px;
+                }
+            }
+      
+          /* High  resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1280px)  {
+            .container {
+                    width: 1200px;
+                    padding: 5px 20px;
+                }
+            }
+          
+
+body {
+     
+     box-sizing: border-box;
+}
+
+/*  Tablet,ipad      */    
+
+
+           
+        
+        /CSS for styling the navigation menu/
+        nav{
+            position: fixed;
+            margin-left:30px;
+            z-index:1;
+                
+            
+        }
+        nav ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+        nav ul li{
+            display:inline;
+            margin-right:20px;
+        }
+        nav ui li a{
+            color:rgba(187, 255, 0, 0.418);
+            text-decoration:none;
+        }
+        nav ul li a:hover{
+            text-decoration:underline;
+        }
+        
+    </style>
+    </head>
+    <body>
+        
+        
+       
+      
+        <nav>
+            <ul>
+                
+                <h1>WELCOME TO OUR WEBSITE</h1>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="Registration.html">Register</a></li>
+               <li><a href="loginpage.html">Login</a></li>
+                <li><a href="about .html">about</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+
+
+            </ul>
+        </nav>
+        <h1 style="position: absolute;" z-index:-1 ></h1>
+    </body>
+    <body>
+        <video style="width:max-content; z-index:-1;position:fixed;" height="650" autoplay  muted loop>
+            <source src="video9.mp4" type="video/mp4">
+        <style>
+            #GFG {
+                color: green;
+                font-size: large;
+            }
+        </style>
+        <body>
+            <div class="bg-video">
+                <video style="width:max-content;" height="600" autoplay muted loop>
+                    <source src="video9.mp4" type="video/mp4">
+            </div>
+        
+            <marquee width="100%" id="GFG" behaviour="fix">
+            DRY FRUITS ARE GOOD FOR HEALTH
+            </marquee>
+            
+        
+      </div>
+    </body>
+    </html>
